@@ -21,6 +21,8 @@ keycloak:
       value: "3"
     - name: KEYCLOAK_EXTRA_ARGS
       value: "-Dkeycloak.migration.action=import -Dkeycloak.migration.provider=dir -Dkeycloak.migration.dir=/realms -Dkeycloak.migration.strategy=OVERWRITE_EXISTING"
+    - name: KEYCLOAK_DATABASE_HOST
+      value: ftcpro-postgresql-primary.postgres
   replicaCount: 1
   extraVolumes:
     - name: themes
@@ -72,6 +74,14 @@ keycloak:
     #   database: iamsharedidp
     #   existingSecret: sharedidp-postgres
     # architecture: replication
+  externalDatabase:
+    host: "ftcpro-postgresql-primary.postgres"
+    port: 5432
+    user: "postgres"
+    database: "iamsharedidp"
+    existingSecret: sharedidp-postgres
+    secret:
+      path: portal/data/dev/iam/sharedidp-postgres
 
 secrets:
   auth:
@@ -92,23 +102,4 @@ secrets:
     company3user: "<path:portal/data/dev/iam/sharedidp-realms#Company-3-users-0.json>"
     masteruser: "<path:portal/data/dev/iam/sharedidp-realms#Company-1-users-0.json>"
 
-externalDatabase:
-  host: "ftcpro-postgresql-primary.postgres"
-  port: 5432
-  user: "postgres"
-  database: "iamsharedidp"
-  existingSecret: sharedidp-postgres
-  secret:
-    path: portal/data/dev/iam/sharedidp-postgres
 
-
-extraEnvVars:
-  - name: KEYCLOAK_USER
-    value: "admin"
-  - name: KEYCLOAK_PASSWORD
-    valueFrom:
-      secretKeyRef:
-        name: sharedidp-keycloak
-        key: admin-password
-  - name: KEYCLOAK_DATABASE_HOST
-    value: ftcpro-postgresql-primary.postgres
