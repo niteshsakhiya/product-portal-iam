@@ -21,7 +21,7 @@ keycloak:
       value: "3"
     - name: KEYCLOAK_EXTRA_ARGS
       value: "-Dkeycloak.migration.action=import -Dkeycloak.migration.provider=dir -Dkeycloak.migration.dir=/realms -Dkeycloak.migration.strategy=OVERWRITE_EXISTING"
-  replicaCount: 3
+  replicaCount: 1
   extraVolumes:
     - name: themes
       emptyDir: {}
@@ -66,23 +66,49 @@ keycloak:
           - get
           - list
   postgresql:
-    enabled: true
-    auth:
-      username: kcshared
-      database: iamsharedidp
-      existingSecret: sharedidp-postgres
-    architecture: replication
+    enabled: false
+    # auth:
+    #   username: kcshared
+    #   database: iamsharedidp
+    #   existingSecret: sharedidp-postgres
+    # architecture: replication
 
 secrets:
   auth:
     existingSecret:
-      adminpassword: ""
-      managementpassword: ""
+      adminpassword: "<path:portal/data/dev/iam/sharedidp-keycloak#admin-password>"
+      managementpassword: "<path:portal/data/dev/iam/sharedidp-keycloak#management-password>"
   postgresql:
     auth:
       existingSecret:
-        postgrespassword: ""
-        password: ""
-        replicationPassword: ""
+        postgrespassword: "<path:portal/data/dev/iam/sharedidp-postgres#postgres-password>"
+        password: "<path:portal/data/dev/iam/sharedidp-postgres#password>"
+        replicationPassword: "<path:portal/data/dev/iam/sharedidp-postgres#replication-password>"
   realmuser:
     enabled: false
+    cxtestaccessuser: "<path:portal/data/dev/iam/sharedidp-realms#CX-Test-Access-users-0.json>"
+    company1user: "<path:portal/data/dev/iam/sharedidp-realms#Company-1-users-0.json>"
+    company2user: "<path:portal/data/dev/iam/sharedidp-realms#Company-2-users-0.json>"
+    company3user: "<path:portal/data/dev/iam/sharedidp-realms#Company-3-users-0.json>"
+    masteruser: "<path:portal/data/dev/iam/sharedidp-realms#Company-1-users-0.json>"
+
+externalDatabase:
+  host: "ftcpro-postgresql-primary.postgres"
+  port: 5432
+  user: "postgres"
+  database: "iamsharedidp"
+  existingSecret: sharedidp-postgres
+  secret:
+    path: portal/data/dev/iam/sharedidp-postgres
+
+
+extraEnvVars:
+  - name: KEYCLOAK_USER
+    value: "admin"
+  - name: KEYCLOAK_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: sharedidp-keycloak
+        key: admin-password
+  - name: KEYCLOAK_DATABASE_HOST
+    value: ftcpro-postgresql-primary.postgres

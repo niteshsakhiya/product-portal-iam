@@ -3143,7 +3143,7 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://partners-gate.pre-prod.demo.catena-x.net/*"
+        "https://partners-gate.pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -3383,7 +3383,7 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "https://materialpass.pre-prod.demo.catena-x.net/*"
+        "https://materialpass.pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [
         "+"
@@ -3468,7 +3468,7 @@
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
         "http://localhost:3000/*",
-        "https://portal.pre-prod.demo.catena-x.net/*"
+        "https://portal.pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [
         "+"
@@ -3573,7 +3573,7 @@
       "clientId": "Cl2-CX-Portal",
       "name": "",
       "description": "",
-      "rootUrl": "https://portal.pre-prod.demo.catena-x.net/home",
+      "rootUrl": "https://portal.pre-prod.demo.ftcpro.co/home",
       "adminUrl": "",
       "surrogateAuthRequired": false,
       "enabled": true,
@@ -3581,10 +3581,10 @@
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
         "http://localhost:8080/*",
-        "https://partners-pool.pre-prod.demo.catena-x.net/*",
+        "https://partners-pool.pre-prod.demo.ftcpro.co/*",
         "http://localhost:3000/*",
-        "https://catenax-bpdm-pre-prod.demo.catena-x.net/*",
-        "https://portal.pre-prod.demo.catena-x.net/*"
+        "https://catenax-bpdm-pre-prod.demo.ftcpro.co/*",
+        "https://portal.pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [
         "+"
@@ -3672,7 +3672,7 @@
       "id": "36e2745d-f331-4fa5-bbfa-90947d7f1dc4",
       "clientId": "Cl3-CX-Semantic",
       "rootUrl": "",
-      "adminUrl": "https://portal.pre-prod.demo.catena-x.net/home",
+      "adminUrl": "https://portal.pre-prod.demo.ftcpro.co/home",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
@@ -3680,7 +3680,7 @@
       "redirectUris": [
         "http://localhost:8080/*",
         "http://localhost:3000/*",
-        "https://portal.pre-prod.demo.catena-x.net/*"
+        "https://portal.pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [
         "+"
@@ -3768,16 +3768,16 @@
       "id": "0dec1120-c21e-42ad-a779-94fc36217072",
       "clientId": "Cl4-CX-DigitalTwin",
       "rootUrl": "",
-      "adminUrl": "https://portal.pre-prod.demo.catena-x.net/home",
+      "adminUrl": "https://portal.pre-prod.demo.ftcpro.co/home",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
         "http://localhost:8080/*",
-        "https://semantics.pre-prod.demo.catena-x.net/*",
+        "https://semantics.pre-prod.demo.ftcpro.co/*",
         "http://localhost:3000/*",
-        "https://portal.pre-prod.demo.catena-x.net/*"
+        "https://portal.pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [
         "+"
@@ -3871,7 +3871,7 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://managed-identity-wallets.pre-prod.demo.catena-x.net/*"
+        "https://managed-identity-wallets.pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -3973,8 +3973,8 @@
       "clientAuthenticatorType": "client-secret",
       "secret": "**********",
       "redirectUris": [
-        "https://partners-pool.pre-prod.demo.catena-x.net/*",
-        "https://catenax-bpdm-pre-prod.demo.catena-x.net/*"
+        "https://partners-pool.pre-prod.demo.ftcpro.co/*",
+        "https://catenax-bpdm-pre-prod.demo.ftcpro.co/*"
       ],
       "webOrigins": [
         "+"
@@ -9369,7 +9369,7 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "https://idses-fe.demo.catena-x.net/*"
+        "https://idses-fe.demo.ftcpro.co/*"
       ],
       "webOrigins": [
         "+"
@@ -10061,10 +10061,10 @@
     "auth": "true",
     "port": "587",
     "host": "smtp.office365.com",
-    "replyTo": "no-reply@catena-x.net",
-    "from": "Notifications@catena-x.net",
+    "replyTo": "no-reply@ftcpro.co",
+    "from": "Notifications@ftcpro.co",
     "ssl": "",
-    "user": "Notifications@catena-x.net"
+    "user": "Notifications@ftcpro.co"
   },
   "loginTheme": "catenax-central",
   "eventsEnabled": true,
@@ -10169,15 +10169,15 @@
       "firstBrokerLoginFlowAlias": "first broker login",
       "config": {
         "validateSignature": "true",
-        "userInfoUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/CX-Test-Access/protocol/openid-connect/userinfo",
-        "tokenUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/CX-Test-Access/protocol/openid-connect/token",
+        "userInfoUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/CX-Test-Access/protocol/openid-connect/userinfo",
+        "tokenUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/CX-Test-Access/protocol/openid-connect/token",
         "clientId": "Central-IdP",
-        "jwksUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/CX-Test-Access/protocol/openid-connect/certs",
-        "issuer": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/CX-Test-Access",
+        "jwksUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/CX-Test-Access/protocol/openid-connect/certs",
+        "issuer": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/CX-Test-Access",
         "useJwksUrl": "true",
-        "authorizationUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/CX-Test-Access/protocol/openid-connect/auth",
+        "authorizationUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/CX-Test-Access/protocol/openid-connect/auth",
         "clientAuthMethod": "client_secret_basic",
-        "logoutUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/CX-Test-Access/protocol/openid-connect/logout",
+        "logoutUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/CX-Test-Access/protocol/openid-connect/logout",
         "syncMode": "IMPORT",
         "clientSecret": "**********"
       }
@@ -10196,15 +10196,15 @@
       "firstBrokerLoginFlowAlias": "first broker login",
       "config": {
         "validateSignature": "true",
-        "userInfoUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-1/protocol/openid-connect/userinfo",
-        "tokenUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-1/protocol/openid-connect/token",
+        "userInfoUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-1/protocol/openid-connect/userinfo",
+        "tokenUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-1/protocol/openid-connect/token",
         "clientId": "Central-IdP",
-        "jwksUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-1/protocol/openid-connect/certs",
-        "issuer": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-1",
+        "jwksUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-1/protocol/openid-connect/certs",
+        "issuer": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-1",
         "useJwksUrl": "true",
-        "authorizationUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-1/protocol/openid-connect/auth",
+        "authorizationUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-1/protocol/openid-connect/auth",
         "clientAuthMethod": "client_secret_basic",
-        "logoutUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-1/protocol/openid-connect/logout",
+        "logoutUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-1/protocol/openid-connect/logout",
         "syncMode": "IMPORT",
         "clientSecret": "**********"
       }
@@ -10223,15 +10223,15 @@
       "firstBrokerLoginFlowAlias": "first broker login",
       "config": {
         "validateSignature": "true",
-        "userInfoUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-2/protocol/openid-connect/userinfo",
-        "tokenUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-2/protocol/openid-connect/token",
+        "userInfoUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-2/protocol/openid-connect/userinfo",
+        "tokenUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-2/protocol/openid-connect/token",
         "clientId": "Central-IdP",
-        "jwksUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-2/protocol/openid-connect/certs",
-        "issuer": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-2",
+        "jwksUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-2/protocol/openid-connect/certs",
+        "issuer": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-2",
         "useJwksUrl": "true",
-        "authorizationUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-2/protocol/openid-connect/auth",
+        "authorizationUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-2/protocol/openid-connect/auth",
         "clientAuthMethod": "client_secret_basic",
-        "logoutUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-2/protocol/openid-connect/logout",
+        "logoutUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-2/protocol/openid-connect/logout",
         "syncMode": "IMPORT",
         "clientSecret": "**********"
       }
@@ -10250,15 +10250,15 @@
       "firstBrokerLoginFlowAlias": "first broker login",
       "config": {
         "validateSignature": "true",
-        "userInfoUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-3/protocol/openid-connect/userinfo",
-        "tokenUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-3/protocol/openid-connect/token",
+        "userInfoUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-3/protocol/openid-connect/userinfo",
+        "tokenUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-3/protocol/openid-connect/token",
         "clientId": "Central-IdP",
-        "jwksUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-3/protocol/openid-connect/certs",
-        "issuer": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-3",
+        "jwksUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-3/protocol/openid-connect/certs",
+        "issuer": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-3",
         "useJwksUrl": "true",
-        "authorizationUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-3/protocol/openid-connect/auth",
+        "authorizationUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-3/protocol/openid-connect/auth",
         "clientAuthMethod": "client_secret_basic",
-        "logoutUrl": "https://sharedidp.pre-prod.demo.catena-x.net/auth/realms/Company-3/protocol/openid-connect/logout",
+        "logoutUrl": "https://sharedidp.pre-prod.demo.ftcpro.co/auth/realms/Company-3/protocol/openid-connect/logout",
         "syncMode": "IMPORT",
         "clientSecret": "**********"
       }

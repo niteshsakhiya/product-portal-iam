@@ -1,5 +1,5 @@
 const ENV = location.hostname.includes('.int.') ? 'int' : 'dev';
-const ASSET_BASE = `https://portal.${ENV}.demo.catena-x.net/assets/themes/centralidp`;
+const ASSET_BASE = `https://portal.${ENV}.demo.ftcpro.co/assets/themes/centralidp`;
 window.onload = () => {
     let icon = document.querySelectorAll('link[rel=icon]')[0];
     if (!icon) {

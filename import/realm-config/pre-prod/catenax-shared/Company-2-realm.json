@@ -1304,11 +1304,11 @@
     "starttls": "true",
     "auth": "true",
     "host": "smtp.office365.com",
-    "replyTo": "no-reply@catena-x.net",
-    "from": "Notifications@catena-x.net",
+    "replyTo": "no-reply@ftcpro.co",
+    "from": "Notifications@ftcpro.co",
     "fromDisplayName": "",
     "ssl": "",
-    "user": "Notifications@catena-x.net"
+    "user": "Notifications@ftcpro.co"
   },
   "eventsEnabled": false,
   "eventsListeners": [

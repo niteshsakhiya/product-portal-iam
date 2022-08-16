@@ -16,7 +16,7 @@ keycloak:
       mountPath: "/secrets"
   initContainers:
     - name: import
-      image: ghcr.io/catenax-ng/product-portal-iam_iam-import-dev:latest
+      image: ftcpro.azurecr.io/keycloak/product-portal-iam_iam-import-dev:latest
       imagePullPolicy: Always
       command:
         - sh
@@ -27,8 +27,8 @@ keycloak:
           cp -R /import/themes/catenax-shared/* /themes
           echo "Copying realms..."
           cp -R /import/catenax-shared/realms/* /realms
-          echo "Copying realms-secrets..."
-          cp /secrets/* /realms
+          # echo "Copying realms-secrets..."
+          # cp /secrets/* /realms
       volumeMounts:
       - name: themes
         mountPath: "/themes"
@@ -39,12 +39,12 @@ keycloak:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: sharedidp.dev.demo.catena-x.net
+    hostname: sharedidp.dev.demo.ftcpro.co
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt-prod
       nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
       nginx.ingress.kubernetes.io/cors-allow-methods: PUT, GET, POST, OPTIONS
-      nginx.ingress.kubernetes.io/cors-allow-origin: https://sharedidp.dev.demo.catena-x.net, http://localhost:3000
+      nginx.ingress.kubernetes.io/cors-allow-origin: https://portal.dev.demo.ftcpro.co
       nginx.ingress.kubernetes.io/enable-cors: "true"
       nginx.ingress.kubernetes.io/proxy-buffer-size: 128k
       nginx.ingress.kubernetes.io/proxy-buffering: "on"

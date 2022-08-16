@@ -1492,10 +1492,10 @@
     "auth": "true",
     "port": "587",
     "host": "smtp.office365.com",
-    "replyTo": "no-reply@catena-x.net",
-    "from": "Notifications@catena-x.net",
+    "replyTo": "no-reply@ftcpro.co",
+    "from": "Notifications@ftcpro.co",
     "ssl": "",
-    "user": "Notifications@catena-x.net"
+    "user": "Notifications@ftcpro.co"
   },
   "eventsEnabled": false,
   "eventsListeners": [
