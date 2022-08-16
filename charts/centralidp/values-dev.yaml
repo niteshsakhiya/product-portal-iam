@@ -66,3 +66,24 @@ secrets:
   realmuser:
     enabled: true
     cxcentraluser: "<path:portal/data/dev/iam/centralidp-realms#CX-Central-users-0.json>"
+
+externalDatabase:
+  host: "ftcpro-postgresql-primary.postgres"
+  port: 5432
+  user: "postgres"
+  database: "iamcentralidp"
+  existingSecret: centralidp-postgres
+  secret:
+    path: portal/data/dev/iam/centralidp-postgres
+
+
+extraEnvVars:
+  - name: KEYCLOAK_USER
+    value: "admin"
+  - name: KEYCLOAK_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: centralidp-keycloak
+        key: admin-password
+  - name: KEYCLOAK_DATABASE_HOST
+    value: ftcpro-postgresql-primary.postgres
