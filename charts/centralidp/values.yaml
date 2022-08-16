@@ -56,7 +56,7 @@ keycloak:
     type: ClusterIP
     sessionAffinity: ClientIP
   ingress:
-    enabled: false
+    enabled: true
   rbac:
     create: true
     rules:
