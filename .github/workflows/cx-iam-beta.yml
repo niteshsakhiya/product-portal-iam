@@ -2,32 +2,39 @@ name: IAM-BETA
 
 on: 
   push:
-    paths:
-      # this workflow file
-      - '.github/workflows/cx-iam-beta.yml'
-      # Docker files
-      - 'docker/Dockerfile-beta.import'
-      # keycloak-themes
-      - 'import/keycloak-themes/**'
-      # keycloak-realms
-      - 'import/realm-config/beta/**'
+    # paths:
+    #   # this workflow file
+    #   - '.github/workflows/cx-iam-beta.yml'
+    #   # Docker files
+    #   - 'docker/Dockerfile-beta.import'
+    #   # keycloak-themes
+    #   - 'import/keycloak-themes/**'
+    #   # keycloak-realms
+    #   - 'import/realm-config/beta/**'
 
-    branches:
-     - 'main'
+    # branches:
+    #  - 'main'
+
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 jobs:
   build:
-    # name of the job starts with a "run-level" subordinate to the workflow such that we can
-    # depend on them in order to implement workflow dependencies
     name: 90 iam-import image built
     runs-on: ubuntu-latest
-    # rely on the first job
+    permissions:
+      contents: read
+      packages: write
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}_iam-import-beta
 
     steps:
+      - name: Get tag name
+        id: git-tag
+        run: echo ::set-output name=git-version::${GITHUB_REF/refs\/tags\//}
+
       # Get the latest sources
       - name: Checkout
         uses: actions/checkout@v3
@@ -52,5 +59,5 @@ jobs:
           context: .
           file: docker/Dockerfile-beta.import
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.git-tag.outputs.git-version }}, ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           labels: ${{ steps.meta.outputs.labels }}
