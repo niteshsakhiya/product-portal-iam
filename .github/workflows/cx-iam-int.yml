@@ -16,7 +16,7 @@ on:
     #  - 'main'
 
     tags:
-      - 'vtest*'
+      - 'v*'
   workflow_dispatch:
 
 jobs:
