@@ -1,4 +1,4 @@
-const ENV = location.hostname.includes('.int.') ? 'int' : 'dev';
+const ENV = location.hostname.includes('.dev.') ? 'dev' : 'int';
 const ASSET_BASE = `https://portal.${ENV}.demo.catena-x.net/assets/themes/centralidp`;
 window.onload = () => {
     let icon = document.querySelectorAll('link[rel=icon]')[0];
