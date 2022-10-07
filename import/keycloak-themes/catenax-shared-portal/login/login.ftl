@@ -53,14 +53,11 @@
                                 autofocus
                                 required
                                 />
-                                <p class="note">
-                                ${msg("passwordSent")}
-                                </p>
                             </div>
                             </div>
                             <div class="form-control-button">
                             <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
-                            <button name="login" type="submit" id="kc-login">${msg("signup")}</button>
+                            <button name="login" type="submit" id="kc-login">${msg("login")}</button>
                             
                             </div>
                         </form>
