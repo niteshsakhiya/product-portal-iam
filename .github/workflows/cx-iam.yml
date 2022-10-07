@@ -12,11 +12,11 @@ on:
     #   # keycloak-realms
     #   - 'import/realm-config/pre-prod/**'
 
-    branches:
-     - 'enabler/CPLP-1574-keycloak-initial-setup'
+    # branches:
+    #  - 'enabler/CPLP-1574-keycloak-initial-setup'
 
     tags:
-      - 'v*'
+      - 'test*'
   workflow_dispatch:
 
 jobs:
