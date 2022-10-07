@@ -68,7 +68,6 @@
                         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
                             <div class="gray-bg">
                             <p>
-                                ${msg("alreadyAccount")} <a href="${properties.loginUrl}">${msg("login")}</a>. 
                                 ${msg("moreInfo")} <a href="${properties.helpUrl}">${msg("helpSection")}</a>.
                             </p>
                             </div>
