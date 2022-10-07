@@ -1,0 +1,13 @@
+FROM ubuntu:22.04
+
+RUN mkdir import
+
+RUN groupadd -r initcxkcgroup && useradd --no-log-init -r -g initcxkcgroup initcxkcuser
+
+RUN chown initcxkcuser:initcxkcgroup import
+
+USER initcxkcuser
+
+COPY import/keycloak-themes/ import/themes
+COPY import/realm-config/generic/catenax-central/ import/catenax-central/realms
+COPY import/realm-config/generic/catenax-shared/ import/catenax-shared/realms
