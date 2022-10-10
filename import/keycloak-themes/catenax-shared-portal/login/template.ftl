@@ -70,20 +70,20 @@
             </li>
             <#if realm.internationalizationEnabled>
             <li>|</li>
-            <#--  <li>
+            <li>
                 <#assign isEn = locale.currentLanguageTag == 'en'>
               <a id="lnkDE" onclick="changeLocale('de',${url})" class="${isEn?then('','active')}">DE</a>
             </li>
             <li>
               <a id="lnkEN" onclick="changeLocale('en',${url})" class="${isEn?then('active','')}">EN</a>
-            </li>  -->
+            </li>
             
-            <#list locale.supported as l>
+            <#--  <#list locale.supported as l>
                 <li class="kc-dropdown-item">
                     <#assign isActive = locale.currentLanguageTag == l.languageTag>
                     <a href="${l.url}" class="${isActive?then('active','')}">${l.languageTag?upper_case}</a>
                 </li>
-            </#list>
+            </#list>  -->
             </#if>
           </ul>
         </div>
