@@ -2946,8 +2946,7 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/CX-Central/account/*",
-        "https://catenaxdev003akssrv.germanywestcentral.cloudapp.azure.com/iamcentralidp/*"
+        "/realms/CX-Central/account/*"
       ],
       "webOrigins": [
         "+"
