@@ -9,5 +9,6 @@ RUN chown initcxkcuser:initcxkcgroup import
 USER initcxkcuser
 
 COPY import/keycloak-themes/ import/themes
-COPY import/realm-config/pen/catenax-central/ import/catenax-central/realms
-COPY import/realm-config/pen/catenax-shared/ import/catenax-shared/realms
+COPY import/realm-config/consortia/catenax-central/pen/ import/catenax-central/realms
+COPY import/realm-config/consortia/catenax-shared/master/pen/ import/catenax-shared/realms
+COPY import/realm-config/consortia/catenax-shared/test-realms/ import/catenax-shared/realms
