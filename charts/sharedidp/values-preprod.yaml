@@ -36,8 +36,10 @@ keycloak:
           echo "Copying realms-secrets..."
           cp /secrets/* /realms
       volumeMounts:
-      - name: themes
-        mountPath: "/themes"
+      - name: themes-catenax-shared
+        mountPath: "/themes-catenax-shared"
+      - name: themes-catenax-shared-portal
+        mountPath: "/themes-catenax-shared-portal"
       - name: realms
         mountPath: "/realms"
       - name: realm-secrets
