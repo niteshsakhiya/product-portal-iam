@@ -29,7 +29,6 @@ The project maintains the following source code repositories in the GitHub organ
 * https://github.com/catenax-ng/product-portal-cd
 * https://github.com/catenax-ng/product-portal-iam
 
-
 ## Third-party Content
 
 This project uses the following Helm chart from Bitnami:
