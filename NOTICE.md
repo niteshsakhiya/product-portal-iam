@@ -31,11 +31,11 @@ The project maintains the following source code repositories in the GitHub organ
 
 ## Third-party Content
 
-This project uses the following Helm chart from Bitnami:
+This project depends on the following Helm chart from Bitnami:
 
 * License: Apache License, Version 2.0
 * Licence Path: https://artifacthub.io/packages/helm/bitnami/keycloak/7.1.18#license
-* Source URL: https://github.com/bitnami/charts/tree/master/bitnami/keycloak
+* Source URL: https://artifacthub.io/packages/helm/bitnami/keycloak/7.1.18
 
 ## Cryptography
 
