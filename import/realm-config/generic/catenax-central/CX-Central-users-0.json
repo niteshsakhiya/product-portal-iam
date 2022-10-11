@@ -1,0 +1,28 @@
+{
+  "realm" : "CX-Central",
+  "users" : [ {
+    "id" : "bd276e4e-926a-4516-95ae-96bf612bf664",
+    "createdTimestamp" : 1652788086549,
+    "username" : "cx-admin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Operator",
+    "lastName" : "CX Admin",
+    "email" : "tobeadded@cx.com",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "federatedIdentities" : [ {
+      "identityProvider" : "cx-admin",
+      "userId" : "17613bcb-ddcb-46b3-8679-9ae90ea6096f",
+      "userName" : "cx-admin"
+    } ],
+    "realmRoles" : [ "default-roles-catena-x realm" ],
+    "clientRoles" : {
+      "Cl2-CX-Portal" : [ "CX Admin" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }]
+}
