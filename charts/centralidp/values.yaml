@@ -103,5 +103,3 @@ secrets:
         postgrespassword: ""
         password: ""
         replicationPassword: ""
-  realmuser:
-    enabled: false
