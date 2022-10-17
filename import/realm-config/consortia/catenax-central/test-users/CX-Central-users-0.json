@@ -121,7 +121,7 @@
   }, {
     "id" : "4a23930a-30b6-461c-9ad4-58d3e761a0b5",
     "createdTimestamp" : 1652788390200,
-    "username" : "cx-test-access.03b7feab-cc55-48cd-882a-0d8db03a8c8c",
+    "username" : "company-1.03b7feab-cc55-48cd-882a-0d8db03a8c8c",
     "enabled" : true,
     "totp" : false,
     "emailVerified" : false,
@@ -145,7 +145,7 @@
   }, {
     "id" : "ee93d4e6-2088-4352-b6e4-21f3fa7f390e",
     "createdTimestamp" : 1652788086549,
-    "username" : "cx-test-access.a81a425e-bdb4-482b-8535-a02c313c25af",
+    "username" : "company-2.a81a425e-bdb4-482b-8535-a02c313c25af",
     "enabled" : true,
     "totp" : false,
     "emailVerified" : false,
