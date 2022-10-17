@@ -1,6 +1,6 @@
 {
-  "id": "Company-3",
-  "realm": "Company-3",
+  "id": "Security-Company",
+  "realm": "Security-Company",
   "notBefore": 0,
   "defaultSignatureAlgorithm": "RS256",
   "revokeRefreshToken": false,
@@ -47,7 +47,7 @@
     "realm": [
       {
         "id": "886e6c46-9fd4-4bc7-822b-bd01a5e2eec9",
-        "name": "default-roles-company-3",
+        "name": "default-roles-security-company",
         "description": "${role_default-roles}",
         "composite": true,
         "composites": {
@@ -63,7 +63,7 @@
           }
         },
         "clientRole": false,
-        "containerId": "Company-3",
+        "containerId": "Security-Company",
         "attributes": {}
       },
       {
@@ -72,7 +72,7 @@
         "description": "${role_offline-access}",
         "composite": false,
         "clientRole": false,
-        "containerId": "Company-3",
+        "containerId": "Security-Company",
         "attributes": {}
       },
       {
@@ -81,7 +81,7 @@
         "description": "${role_uma_authorization}",
         "composite": false,
         "clientRole": false,
-        "containerId": "Company-3",
+        "containerId": "Security-Company",
         "attributes": {}
       }
     ],
@@ -397,11 +397,11 @@
   "groups": [],
   "defaultRole": {
     "id": "886e6c46-9fd4-4bc7-822b-bd01a5e2eec9",
-    "name": "default-roles-company-3",
+    "name": "default-roles-security-company",
     "description": "${role_default-roles}",
     "composite": true,
     "clientRole": false,
-    "containerId": "Company-3"
+    "containerId": "Security-Company"
   },
   "requiredCredentials": [
     "password"
@@ -464,13 +464,13 @@
       "clientId": "account",
       "name": "${client_account}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/Company-3/account/",
+      "baseUrl": "/realms/Security-Company/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/Company-3/account/*"
+        "/realms/Security-Company/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -505,13 +505,13 @@
       "clientId": "account-console",
       "name": "${client_account-console}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/Company-3/account/",
+      "baseUrl": "/realms/Security-Company/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/Company-3/account/*"
+        "/realms/Security-Company/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -733,13 +733,13 @@
       "clientId": "security-admin-console",
       "name": "${client_security-admin-console}",
       "rootUrl": "${authAdminUrl}",
-      "baseUrl": "/admin/Company-3/console/",
+      "baseUrl": "/admin/Security-Company/console/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/admin/Company-3/console/*"
+        "/admin/Security-Company/console/*"
       ],
       "webOrigins": [
         "+"
