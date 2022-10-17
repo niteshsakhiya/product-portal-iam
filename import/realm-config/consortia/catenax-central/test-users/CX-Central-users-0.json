@@ -59,9 +59,9 @@
     "lastName" : "CX User",
     "email" : "cxuser@cx.com",
     "attributes" : {
-      "bpn" : [ "BPNL000000000001" ],
+      "bpn" : [ "BPNL000000000001", "BPNL00000003CRHK" ],
       "organisation" : [ "CX-Test-Access" ],
-      "tenant" : [ "CX-Test-New" ]
+      "tenant" : [ "CX-Test-Access" ]
     },
     "credentials" : [ ],
     "disableableCredentialTypes" : [ ],
@@ -89,8 +89,9 @@
     "lastName" : "CX Admin",
     "email" : "cxadmin@cx.com",
     "attributes" : {
+      "bpn" : [ "BPNL00000003CRHK" ],
       "organisation" : [ "CX-Test-Access" ],
-      "tenant" : [ "CX-Test-New" ]
+      "tenant" : [ "CX-Test-Access" ]
     },
     "credentials" : [ ],
     "disableableCredentialTypes" : [ ],
@@ -120,7 +121,7 @@
     "attributes" : {
       "bpn" : [ "BPNL000000000001" ],
       "organisation" : [ "CX-Test-Access" ],
-      "tenant" : [ "CX-Test-New" ]
+      "tenant" : [ "CX-Test-Access" ]
     },
     "credentials" : [ ],
     "disableableCredentialTypes" : [ ],
@@ -224,7 +225,7 @@
     "lastName" : "CX User 1",
     "email" : "cxuser-1@cx.com",
     "attributes" : {
-      "bpn" : [ "BPNL000000000001" ],
+      "bpn" : [ "BPNL000000000001", "BPNL00000003CRHK" ],
       "organisation" : [ "Security-Company" ],
       "tenant" : [ "Security-Company" ]
     },
@@ -254,7 +255,7 @@
     "lastName" : "CX User 2",
     "email" : "cxuser-2@cx.com",
     "attributes" : {
-      "bpn" : [ "BPNL000000000001" ],
+      "bpn" : [ "BPNL000000000001", "BPNL00000003CRHK" ],
       "organisation" : [ "Security-Company" ],
       "tenant" : [ "Security-Company" ]
     },
@@ -284,6 +285,7 @@
     "lastName" : "CX Admin 1",
     "email" : "cxadmin-1@cx.com",
     "attributes" : {
+      "bpn" : [ "BPNL00000003CRHK" ],
       "organisation" : [ "Security-Company" ],
       "tenant" : [ "Security-Company" ]
     },
@@ -313,6 +315,7 @@
     "lastName" : "CX Admin 2",
     "email" : "cxadmin-2@cx.com",
     "attributes" : {
+      "bpn" : [ "BPNL00000003CRHK" ],
       "organisation" : [ "Security-Company" ],
       "tenant" : [ "Security-Company" ]
     },
