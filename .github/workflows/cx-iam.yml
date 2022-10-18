@@ -16,7 +16,7 @@ on:
     #  - 'enabler/CPLP-1574-keycloak-initial-setup'
 
     tags:
-      - 'test*'
+      - 'v*'
   workflow_dispatch:
 
 jobs:
