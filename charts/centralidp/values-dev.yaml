@@ -22,7 +22,7 @@ keycloak:
           echo "Copying themes..."
           cp -R /import/themes/catenax-central/* /themes
           echo "Copying realms..."
-          cp -R /import/catenax-central/realms/* /realms
+          cp -R import/catenax-central/realms/* /realms
       volumeMounts:
       - name: themes
         mountPath: "/themes"
