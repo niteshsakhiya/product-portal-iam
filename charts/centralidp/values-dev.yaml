@@ -44,6 +44,7 @@ keycloak:
     tls: true
   postgresql:
     enabled: false
+    architecture: false
 
   externalDatabase:
     host: "postgresql-primary.postgres"
