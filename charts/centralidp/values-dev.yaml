@@ -66,7 +66,9 @@ keycloak:
           key: admin-password
     - name: KEYCLOAK_DATABASE_HOST
       value: postgresql-primary.postgres
-
+    - name: KEYCLOAK_EXTRA_ARGS
+      value: "-Dkeycloak.migration.action=import -Dkeycloak.migration.provider=dir -Dkeycloak.migration.dir=/realms -Dkeycloak.migration.strategy=IGNORE_EXISTING"
+      
 secrets:
   auth:
     existingSecret:
