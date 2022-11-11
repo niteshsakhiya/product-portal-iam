@@ -55,6 +55,9 @@ secrets:
         password: "<path:portal/data/dev/iam/centralidp-postgres#password>"
         replicationPassword: "<path:portal/data/dev/iam/centralidp-postgres#replication-password>"
 
+postgresql:
+  enabled: false
+
 externalDatabase:
   host: "postgresql-primary.postgres"
   port: 5432
