@@ -1,4 +1,5 @@
 keycloak:
+  replicaCount: 1
   extraVolumes:
     - name: themes
       emptyDir: {}
@@ -11,7 +12,7 @@ keycloak:
       mountPath: "/realms"
   initContainers:
     - name: import
-      image: ftcpro.azurecr.io/keycloak/product-portal-iam_iam-import-dev-new-cf:latestt
+      image: ftcpro.azurecr.io/keycloak/product-portal-iam_iam-import-dev-new-cf:latest
       imagePullPolicy: Always
       command:
         - sh
