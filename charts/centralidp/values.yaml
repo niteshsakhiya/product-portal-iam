@@ -91,6 +91,13 @@ keycloak:
       database: iamcentralidp
       existingSecret: centralidp-postgres
     architecture: replication
+  readinessProbe:
+    enabled: true
+    initialDelaySeconds: 60
+    periodSeconds: 10
+    timeoutSeconds: 1
+    failureThreshold: 3
+    successThreshold: 1
 
 secrets:
   auth:
