@@ -80,7 +80,10 @@ keycloak:
     - name: KEYCLOAK_EXTRA_ARGS
       value: "-Dkeycloak.migration.action=import -Dkeycloak.migration.provider=dir -Dkeycloak.migration.dir=/realms -Dkeycloak.migration.strategy=IGNORE_EXISTING"
   replicaCount: 1
-
+  postgresql:
+    enabled: false
+    architecture: "standalone"
+    
 secrets:
   auth:
     existingSecret:
